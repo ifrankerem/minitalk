@@ -1,20 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   minitalk.h                                         :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iarslan <iarslan@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/12 13:53:19 by iarslan           #+#    #+#             */
-/*   Updated: 2025/03/12 18:41:57 by iarslan          ###   ########.fr       */
+/*   Created: 2024/11/13 01:23:29 by iarslan           #+#    #+#             */
+/*   Updated: 2024/12/07 21:19:26 by iarslan          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef MINITALK_H
-# define MINITALK_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
 
-# include "./ft_printf.h"
-# include <signal.h>
+# include <stdarg.h>
 # include <unistd.h>
+
+int	ft_putchar(char c);
+int	ft_putstr(char *s);
+int	ft_putnbr(int nb);
+int	ft_printf(const char *format, ...);
+int	wrtp(void *ptr);
+int	ft_putnbr_basever2(unsigned int nbr, char *base);
 
 #endif
